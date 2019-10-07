@@ -1,0 +1,35 @@
+@media(max-width: 320px){
+  .to_choice{
+    .btn.choice_btn{
+      width: 300px;
+    }
+  }
+  header{
+    .content{
+      h1{
+        font-size: 6vw;
+      }
+      height: 350px;
+    }
+  }
+  img#main_cake{
+    right: 20px;
+    top: 160px;
+    position: absolute;
+    z-index: 0;
+  }
+  .order{
+    ul{
+      position: relative;
+      z-index: 10;
+    }
+  }
+  .content{
+    width: 100%;
+    .choice_block{
+      .choice_image{
+        width: 100%;
+      }
+    }
+  }
+}

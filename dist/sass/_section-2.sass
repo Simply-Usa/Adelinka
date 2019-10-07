@@ -1,0 +1,338 @@
+.output
+  position: absolute
+  top: 100px
+  background-color: #fff
+  border-radius: 10px
+  padding: 10px
+  font-family: 'gothic'
+  display: none
+.to_order
+  background: url(../img/order-bg.png) no-repeat center center / cover
+  height: 260px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  margin-bottom: 140px
+  position: relative
+  z-index: 10
+  h2
+    font-family: Segoe Print
+    color: #262322
+    font-size: 2vw
+    line-height: 36px
+
+  p
+    font-family: 'gothic'
+    color: #242424
+    margin: 10px 0
+  h3
+    font-size: 3vw
+    text-transform: uppercase
+    font-family: 'gothic'
+    color: #242424
+  .btn
+    height: 50px
+    width: 270px
+    font-size: 1.4vw //22px 
+.btn.long
+  width: 320px
+  height: 43px
+  margin-top: 10px
+.container
+  h2
+    font-family: Segoe Print
+    color: #262322
+    font-size: 2vw
+    line-height: 36px
+    text-align: center
+.cakes
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  .cake_block
+    width: 250px
+    margin: 20px 20px
+    text-align: center
+    position: relative
+    z-index: 10
+    font-family: 'gothic'
+    h3
+      font-size: 24px
+      color: #6c1c01
+    p
+      font-size: 18px
+      color: #181818
+.slider_container
+  width: 100%
+  // border: 1px solid
+  position: relative
+  z-index: 10
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 50px 0
+  svg
+    margin: 0 20px
+    cursor: pointer
+  .slider, .slider3
+    width: 1036px
+    overflow: hidden
+  .polosa
+    // border: 1px solid
+    display: flex
+    position: relative
+    transition: .3s
+    left: 0
+    img
+      margin-right: 20px
+      border-radius: 10px
+      &:last-child
+        margin: 0
+.btn.order_btn
+  width: 270px
+  height: 50px
+  margin: auto
+  font-size: 1.6vw
+.about_job
+  margin-top: 170px
+  margin-bottom: 190px
+.about
+  display: flex
+  align-items: center
+  margin-bottom: 70px
+  .txt_about
+    margin-left: 25px
+  p
+    font-family: 'gothic'
+    margin: 30px 0
+    font-size: 1.2vw
+    line-height: 24px
+    color: #181818
+  h2
+    font-size: 2vw
+  h2, h3
+    font-family: Segoe Print
+    text-align: left
+    line-height: 30px
+  h3
+    font-size: 1.7vw
+    color: #6c1c01
+.com
+  margin: 190px 0 210px 0
+img#ceh_img
+  z-index: 0
+  // border: 1px solid
+  left: 45%
+.commtents
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  margin-top: 45px
+  grid-gap: 0 20px
+  .comment
+    position: relative
+    z-index: 10
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    color: #242424
+    box-shadow: 3px 4px 21px 0 rgba(47, 47, 47, 0.6)
+    // width: 280px
+    padding: 15px
+    border-radius: 10px
+    h3
+      font-size: 1.2vw
+      font-family: 'gothic'
+      text-align: center
+      margin-bottom: 10px
+    p
+      font-family: 'gothic'
+      text-align: center
+    .photo
+      position: relative
+      height: 200px
+      width: 200px
+      border-radius: 50%
+      overflow: hidden
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        width: 300px
+.ceh
+  p
+    text-align: center
+    font-size: 18px
+    font-family: 'gothic'
+    color: #242424
+    margin-top: 15px
+.footer_bottom
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 40px
+  color: #fff
+  font-size: 3vw
+  // border: 1px solid
+  width: 100%
+  a
+    display: flex
+    color: #fff
+    align-items: center
+  img
+    width: 150px
+    margin-left: 5px
+@keyframes toptop
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(360deg)
+.opTop:hover img
+  animation: none
+.opTop
+  position: fixed
+  z-index: 10000000000000
+  bottom: 10px
+  right: 10px
+  // border: 1px solid
+  // border: 1px solid
+  a
+    img
+      // transform: rotate(180deg)
+      animation: toptop 1s infinite
+footer
+  padding-top: 10px
+  text-align: center
+  background-color: #9E0135
+  height: fit-content
+  position: relative
+  p,a
+    font-family: 'gothic'
+    font-size: 1.1vw
+  // height: 375px
+  .connection
+    display: flex
+    div
+      a
+        color: #fff
+    h2
+      color: #fff
+      text-align: left
+  iframe
+    width: 580px
+    height: 375px
+    // transform: translateY(-30px)
+    margin-right: 10px
+  .feed_back
+    h2
+      margin-bottom: 10px
+      margin-top: 10px
+    div
+      display: flex
+      flex-direction: column
+      // border: 1px solid
+      width: fit-content
+      a
+        margin: 0 0 10px
+        display: flex
+        align-items: center
+        font-family: 'gothic'
+        text-align: left
+        img
+          margin-right: 10px
+        &:last-child
+          margin: 0
+    img
+      width: 40px
+      height: 40px
+.footer_prx
+  position: relative
+  img
+    position: absolute
+    &:first-child
+      position: absolute
+      right: 0
+      top: 50px 
+    &:nth-child(2)
+      top: 190px
+      right: 223px
+.ceh_prx
+  position: relative
+  img
+    position: absolute
+#order_cake
+  position: fixed
+  display: none
+  justify-content: center
+  align-items: center
+  z-index: 100000
+  top: 0
+  width: 100%
+  height: 100vh
+  background-color: rgba(0,0,0,.5)
+  .form_container
+    // border: 3px solid 
+    border-radius: 10px
+    overflow: hidden
+    width: fit-content
+    background-color: #fff
+    position: relative
+    display: flex
+    &::after
+      content: ''
+      display: table
+      clear: both
+    img.woman
+      width: 200px
+      height: 300px
+    img#close
+      position: absolute
+      top: 5px
+      right: 5px
+      transition: .3s ease-in-out
+      cursor: pointer
+      &:hover
+        transform: rotate(-180deg)
+    form
+      display: flex
+      flex-direction: column
+      // border: 2px solid
+      width: 100%
+      padding: 5px
+      .btn
+        height: 50px
+        border: none
+        color: #fff
+        cursor: pointer
+        font-size: 2vw
+        margin-top: 10px
+      input
+        margin-top: 10px
+        height: 30px
+        font-size: 1.7vw
+      legend
+        font-family: 'gothic'
+        h2
+          font-size: 3vw
+.get_order
+  svg#rotation
+    animation: rot 1s infinite
+.flex
+  display: flex
+  justify-content: center
+  // border: 1px solid
+  flex-wrap: wrap
+.cakes.flex
+  .cake_block
+    background-color: rgba(255,255,255,.8)
+    box-shadow: 0 0 4px 2px #aaa
+    border-radius: 10px
+@media(max-width: 600px)
+  .form_container
+    border: 2px solid
+    width: 100%
+    form
+      input
+        // background-color: #000
+        font-size: 10vw

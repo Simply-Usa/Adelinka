@@ -1,0 +1,451 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  outline: none
+svg, img.bulki
+  position: relative
+  z-index: 0
+a
+  text-decoration: none
+  color: #272727
+.choice
+  position: relative
+  z-index: 1
+.open_menu
+  display: none
+  position: fixed
+  right: 0
+  top: 0
+  width: 40px
+  height: 40px
+  hr
+    border: none
+    width: 95%
+    height: 2px
+    background-color: #161616
+hr.white_menu
+  background: #fff
+body
+  color: #e2024c
+.content
+  width: 1200px
+  margin: auto
+  position: relative
+  display: flex
+  justify-content: space-around
+  #main_cake
+    margin-left: 30px
+    transform: translate(20px, 50px)
+    width: 45%
+    z-index: 0
+button.btn
+  text-transform: uppercase
+  position: relative
+  z-index: 10
+  border: none
+  color: #fff
+  font-family: 'gothic'
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  animation: pulse 1s infinite
+  &:active
+    color: #f4f2f2
+header
+  background: url(../img/header-bg.jpg) no-repeat center top / cover
+  padding-top: 20px 
+  height: 100vh
+  position: relative
+  z-index: 100
+  margin-bottom: 120px
+  .content
+    height: fit-content
+    transform: translateY(-50px)
+.btn
+  border-radius: 100px 
+  box-shadow: 3.7px 4.6px 6px 0 rgb(47,47,47)
+  background: #e2024c
+  position: relative
+  z-index: 10
+//SVG IMAGES (start)
+header 
+  // overflow: hidden
+  .container > *
+    position: relative
+.svgs
+  position: relative
+  z-index: 0
+  width: 90%
+  left: 50%
+  transform: translateX(-50%)
+  svg
+    position: absolute
+    z-index: 0
+    &:nth-child(3)
+      // transform: translate(320px, 100px)
+      margin-left: 320px
+      margin-top: 100px
+    &:nth-child(6)
+      // transform: translate(390px, 136px)
+      margin-left: 400px
+      margin-top: 130px
+    &:nth-child(4)
+      // transform: translate(430px, 125px)
+      margin-left: 450px
+      margin-top: 130px
+    &:nth-child(2)
+      // transform: translate(610px, 576px)
+      margin-left: 620px
+      margin-top: 580px
+    &:nth-child(5)
+      // transform: translate(510px, 420px)
+      margin-left: 515px
+      margin-top: 425px
+    &:nth-child(8)
+      // transform: translate(695px, 735px)
+      margin-left: 700px
+      margin-top: 740px
+    &:nth-child(9)
+      // transform: translate(575px, 480px)
+      margin-left: 580px
+      margin-top: 485px
+    &:nth-child(1)
+      // transform: translate(610px, 435px)
+      margin-left: 620px
+      margin-top: 440px
+    &:nth-child(7)
+      // transform: translate(715px, 435px)
+      margin-left: 720px
+      margin-top: 440px
+//SVG IMAGES (finish)
+@font-face
+  font-family: 'gothic'
+  font-display: swap
+  src: url(../fonts/GOTHICB.TTF)
+@font-face
+  font-family: Segoe Print
+  src: url(../fonts/segoe-print.ttf)
+.container
+  width: 1140px
+  margin: auto
+  position: relative
+.header_menu
+  display: flex
+  // justify-content: space-between
+  font-family: 'gothic'
+  color: #682514
+  // border: 1px solid
+  height: 120px
+  p
+    transform: translate(5px, 20px)
+  .menu
+    display: flex
+    list-style: none
+    margin-left: 55px
+    margin-right: 50px
+    transform: translateY(40px)
+    li
+      a
+        white-space: nowrap
+      margin-right: 45px
+      font-size: 1.3vw
+      &:last-child
+        margin: 0
+  .btn
+    width: 169px
+    height: 30px
+    margin-top: 5px
+    img
+      margin-right: 5px
+  .logo
+    display: flex
+    img
+      width: 150px
+      height: 150px
+.call
+  a
+    font-size: 1.2vw
+.order
+  .btn
+    width: 355px
+    height: 60px
+    font-size: 2vw
+  margin-top: 70px
+  h1
+    font-family: Segoe Print
+    line-height: 45px
+    font-size: 2.6vw
+    background-color: rgba(255,255,255,.9)
+    padding: 10px
+    border-radius: 20px
+    margin-top: 20px
+  ul
+    list-style: none
+    font-family: 'gothic'
+    margin-top: 37px
+    width: 70%
+    background-color: rgba(255,255,255,.9)
+    border-radius: 20px
+    padding: 10px
+    li
+      display: flex
+      margin-top: 10px
+      &:nth-child(3)
+        img
+          margin-right: 3px
+      img
+        margin-right: 10px
+.get_order
+  display: flex
+  margin-top: 20px
+  button
+    margin: 20px 0 0 10px
+.fit
+  width: fit-content
+.choice_block
+  position: relative
+  // border: 2px solid
+  z-index: 10
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 0 20px
+  margin: 0 0 100px 0
+  .to_choice
+    // border: 1px solid
+    text-align: center
+    // width: fit-content
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    z-index: 0
+    flex-direction: column
+    ul
+      // text-align: left
+      list-style: none
+      // border: 1px solid
+    p
+      font-family: 'gothic'
+      color: #6c1c01
+      margin: 10px 0
+    .choice_btn
+      width: 355px
+      height: 65px
+      font-size: 2vw // 30px +-
+    h2
+      font-family: Segoe Print
+      line-height: 36px
+      color: #262322
+      font-size: 2vw // 30px +-
+.to_choice__list
+  .btn
+    height: 50px
+    width: 270px
+    font-size: 1.4vw // 22px
+    margin-top: 20px
+  display: flex
+  flex-direction: column
+  // border: 1px solid
+  h2
+    font-family: Segoe Print
+    color: #262322
+    font-size: 2vw
+  p
+    font-family: 'gothic'
+    font-size: 1.1vw
+    b
+      font-size: 1.4vw
+      color: #6c1c01
+  ul
+    list-style: none
+    li
+      display: flex
+      align-items: center
+      font-family: 'gothic'
+      color: #1a1a1a
+      font-size: 1.2vw
+      p
+        font-size: 1.5vw
+        margin-top: 20px
+      &:first-child
+        &:before
+          content: none
+      &:before
+        content: ''
+        width: 8px
+        height: 8px
+        background-color: #d20c0d
+        display: block
+        border-radius: 50%
+        box-shadow: 0 0 0 3px #ffeca1
+        margin-right: 5px
+.choice_block.list.right
+  display: flex
+  justify-content: flex-end
+  // border: 1px solid
+  .to_choice__list.fit
+    // border: 1px solid
+    text-align: right
+    margin-right: 20px
+    // display: flex
+    align-items: flex-end
+    .btn
+      text-align: right
+    ul
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      li
+        p
+          margin-right: 16px
+        &:first-child
+          &:after
+            content: none
+        &:before
+          content: none
+        &:after
+          content: ''
+          width: 8px
+          height: 8px
+          background-color: #d20c0d
+          display: block
+          border-radius: 50%
+          box-shadow: 0 0 0 3px #ffeca1
+          margin: 0 5px
+@keyframes pulse
+  0%
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5)
+  100%
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0)
+@keyframes rot
+  0%
+    transform: rotate(40deg) translateX(-30px)
+  100%
+    transform: rotate(10deg)
+section
+  position: relative
+  .content
+    position: relative
+    z-index: 10
+    *
+      z-index: 100
+img.bulki
+  position: absolute
+  top: 450px
+  z-index: 0
+img#order_img
+  top: 740px
+  right: 500px
+img#honey_img
+  top: 1050px
+  right: 250px
+img#forest_img
+  left: 200px
+  top: 1550px
+img#royal_img
+  right: 200px
+  top: 2200px
+img#choko_img
+  left: 200px
+  top: 2700px
+img#power_img
+  top: 40px
+  left: 45%
+img#one_img
+  left: 270px
+  top: 250px
+img#two_img
+  top: 220px
+  // transform: translateX(-45%)
+img#three_img
+  right: 260px
+  top: 220px
+img#four_img
+  left: 0
+  top: 1300px
+img#five_img
+  right: 0
+  top: 1300px
+img#we_do
+  left: 45%
+  top: 800px
+  // transform: translateY(-45%)
+img#home_img
+  top: 200px
+  left: 45%
+  // transform: translateY(-45%)
+img#examp_img
+  top: 320px
+  left: 45%
+  // transform: translateY(-45%)
+img#coms_img
+  left: 45%
+  // transform: translateY(-45%)
+img#ceh_img
+  left: 45%
+  top: 400px
+  // transform: translateY(-45%)
+@import '_section-2.sass'
+@import '_media.scss'
+@import '_media2.scss'
+.choice_block .to_choice .choice_btn
+  margin-top: 20px
+.main_slider
+  // border: 1px solid
+  margin-top: 30px
+  margin-bottom: 30px
+  .owl-carousel
+    border-radius: 10px
+    // border: 1px solid
+    overflow: hidden
+    img
+      border-radius: 10px
+  .owl-theme
+    .custom-nav
+      position: absolute
+      top: 50%
+      left: 0
+      right: 0
+      .owl-prev, .owl-next
+        position: absolute
+        height: 100px
+        color: inherit
+        background: none
+        border: none
+        z-index: 100
+      .owl-prev
+        left: -70px
+      .owl-next
+        right: -70px
+@media(max-width: 425px)
+	.main_slider .owl-theme .custom-nav .owl-prev
+		left: 20px
+.feed_back
+  position: relative
+  z-index: 100
+.first_slider, .second_slider
+  .owl-theme
+    .custom-nav
+      position: absolute
+      top: 35%
+      left: 0
+      right: 0
+::-webkit-scrollbar
+  width: 12px
+::-webkit-scrollbar-track
+  box-shadow: 0 0 5px 0 inset #aaa
+  background-color: rgb(233, 227, 227)
+::-webkit-scrollbar-thumb
+  background-color: #d20c0d
+  border-radius: 10px
+  border: 2px solid rgb(233, 227, 227)
+@media(max-width: 375px)
+  .main_slider .owl-theme .custom-nav .owl-prev
+    left: 0px
+  .main_slider .owl-theme .custom-nav .owl-next
+    left: 300px
+@media(max-width: 360px)
+  .main_slider .owl-theme .custom-nav .owl-prev
+    left: -8px
